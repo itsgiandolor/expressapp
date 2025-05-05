@@ -6,16 +6,7 @@ app.set('view engine', 'ejs')
 app.listen(3000);
 
 //Home Page
-app.get('/', (req, res) => {
-    
-    const blogs = [     
-        {title: 'Mia can lift ', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-        {title: 'Wala nang roads', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-        {title: 'Jonnie Confession', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-    ];
 
-    res.render('index', {title: "Home", blogs})
-})
 
 //About page
 app.get('/about', (req, res) => {
